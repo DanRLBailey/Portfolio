@@ -62,8 +62,6 @@ section{
     h2{
         margin: 0;
         font-weight: normal;
-
-        
     }
 }
 
@@ -111,16 +109,29 @@ h1{
 
             p{
                 padding: 7px;
-                //border-left: 2px solid lighten($color: $black, $amount: 30);
                 font-size: .8em;
                 margin-top: -1em;
                 font-style: normal;
                 font-weight: normal;
             }
         }
+    }
 
-        ul{
-            //list-style: none;
+    .card-freelance{
+        width: 40%;
+
+        p{
+            font-size: 1.2em;
+
+            a{
+                color: $grey;
+                text-decoration: none;
+                transition: $transition;
+
+                &:hover{
+                    text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 5px;
+                }
+            }
         }
     }
 }
@@ -182,6 +193,30 @@ h1{
             border-color: $dark-blue-solid;
         }
 
+        p{
+            font-size: 1.2em;
+        }
+
+        button{
+            margin-top: 1em;
+            font-size: 1.2em;
+            font-family: 'Quicksand';
+            color: $white;
+            border: 2px solid $dark-blue-solid;
+            border-radius: .1em;
+            background: none;
+            padding: .5em;
+            transition: $transition;
+            background: $dark-blue-solid;
+
+            &:hover{
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+                background: darken($color: $dark-blue-solid, $amount: 10);
+                border: 2px solid darken($color: $dark-blue-solid, $amount: 10);
+            }
+        }
+
         padding-bottom: 3em;
     }
 }
@@ -195,10 +230,37 @@ h1{
             border-color: $teal-solid;
         }
     }
+
+    a{
+        text-decoration: none;
+
+        .freelance-button{
+            width: 15%;
+            margin: 2em auto 0 auto;
+            background: $dark-blue-solid;
+            color: $white;
+            font-family: $heading-font;
+            text-transform: uppercase;
+            padding: .5em;
+            font-size: 1em;
+            border-radius: .2em;
+            transition: $transition;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+            &:hover{
+                transform: translateY(-.2em);
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
 }
 
 #contact{
     background: $cream;
+
+    .card{
+        width: 40%;
+    }
 
     a, i{
         color: $white;
@@ -224,8 +286,8 @@ h1{
     }
 
     form{
+        
         label{
-            font-size: 1.5em;
             position: relative;
 
             input, textarea{
@@ -234,63 +296,33 @@ h1{
                 border-bottom: 2px solid $grey;
                 color: $grey;
                 width: 80%;
-                font-size: 1em;
+                font-size: 1.25em;
                 margin: 1em 0;
                 resize: none;
                 transition: $transition;
                 font-family: 'Quicksand';
-    
-                &:focus{
-                    outline: none;
-    
-                    // &::placeholder{
-                    //     transition: $transition;
-                    //     color: transparent;
-                    // }
-                }
-
-                &:not(:placeholder-shown) + span,
-                &:focus + span{
-                    left: 0;
-                    top: -1em;
-                    opacity: 1;
-                }
                 
                 &:focus{
                     outline: none;
+
+                    &::placeholder{
+                        transition: $transition;
+                        color: transparent;
+                    }
                 }
             }
 
             textarea{
-                
-                
                 &:focus{
                     outline: none;
                 }
-            }
-
-            span{
-                pointer-events: none;
-                position: absolute;
-                left: 0;
-                top: 0;
-                opacity: 0.5;
-                transition: $transition;
             }
         }
-
-        .message-label{
-            textarea{
-                &:not(:placeholder-shown) + span,
-                &:focus + span{
-                    left: 0;
-                    top: -7.5em;
-                    opacity: 1;
+        p:first-child{
+            label{
+                input{
+                    width: 40%;
                 }
-            }
-            
-            span{
-                top: -6.5em;
             }
         }
 
@@ -299,7 +331,6 @@ h1{
             font-family: 'Quicksand';
             color: $white;
             border: 2px solid $dark-blue-solid;
-            //border-bottom: 2px solid $grey;
             border-radius: .1em;
             background: none;
             padding: .5em;
@@ -331,7 +362,7 @@ h1{
         
         .cards{
             display: block;
-            .card{
+            .card, .card-freelance{
                 width: 80%;
             }
         }
@@ -339,8 +370,18 @@ h1{
 
     #home{
         margin-top: -9em;
+        
         h1{
             width: 80%;
+        }
+    }
+
+    #freelance{
+        a{
+            .freelance-button{
+                width: 80%;
+                margin-top: 1em;
+            }
         }
     }
 

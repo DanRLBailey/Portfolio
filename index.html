@@ -15,17 +15,18 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#7FAFAF">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Heebo:700|Quicksand" rel="stylesheet">
+    <script src="smoothscroll.js"></script>
 </head>
 
 <body>
     <div class="header">
         <div class="navbar">
             <ul>
-                <a href="#"><li>Home</li></a>
+                <a href="#home"><li>Home</li></a>
                 <a href="#skills"><li>Skills</li></a>
                 <a href="#projects"><li>Projects</li></a>
                 <a href="#freelance"><li>Freelance</li></a>
@@ -81,14 +82,17 @@
         <h1 class="heading">Projects</h1>
         <div class="cards">
             <div class="card">
-                    <h3>Meow Games</h3>
-                    A games company I co-founded. We have a couple projects including a game and a website!
+                <h3>Meow Games</h3>
+                <p>A games company I co-founded. We have a couple projects including a game and a website!</p>
+                <a target="_blank" href="https://twitter.com/MeowGames_" rel="noreferrer"><button>View</button></a>
             </div>
             <div class="card">
-                    <h3>D'Litas</h3>
-                    A cake company I am currently developing the website for.
+                <h3>D'Litas</h3>
+                <p>A cake company I am currently developing the website for.</p>
+                <a target="_blank" href="http://dlitas.co.uk" rel="noreferrer"><button>View</button></a>
             </div>
         </div>
+
         <!--<h2>Completed</h2>
         <div class="cards">
             <div class="card">
@@ -103,48 +107,57 @@
     <section id="freelance">
         <h1 class="heading">Freelance</h1>
         <div class="cards">
-                <div class="card">
-                    <h3>Current Freelancing</h3>
-                    This is the range of freelance work I am currently offering.
-                    <ol>
-                        <li><p>Website Design</p></li>
-                        <li><p>Website Development</p></li>
-                        <li><p>Logo Design</p></li>
-                        <li><p>Business Card Design</p></li>
-                    </ol>
-                </div>
-                <div class="card">
-                        <h3>Future Freelancing</h3>
-                    This is a list of possible future freelance work opportunities.
-                    <ol>
-                        <li><p>C++ Projects</p></li>
-                        <li><p>Android/iOS App Development</p></li>
-                        <li><p>Photo Editing</p></li>
-                        <li><p>Video Editing</p></li>
-                        <li><p>C++/HTML/CSS/Js Bug Fixing</p></li>
-                    </ol>
-                </div>
+            <div class="card">
+                <h3>Current Freelancing</h3>
+                This is the range of freelance work I am currently offering.
+                <ol>
+                    <li><p>Website Design</p></li>
+                    <li><p>Website Development</p></li>
+                    <li><p>Logo Design</p></li>
+                    <li><p>Business Card Design</p></li>
+                </ol>
             </div>
+            <div class="card">
+                    <h3>Future Freelancing</h3>
+                This is a list of possible future freelance work opportunities.
+                <ol>
+                    <li><p>C++ Projects</p></li>
+                    <li><p>Android/iOS App Development</p></li>
+                    <li><p>Photo Editing</p></li>
+                    <li><p>Video Editing</p></li>
+                    <li><p>C++/HTML/CSS/Js Bug Fixing</p></li>
+                </ol>
+            </div>
+        </div>
+        <a href="#contact">
+            <div class="freelance-button">
+                <p>Contact me here for more info</p>
+            </div>
+        </a>
     </section>
 
     <section id="contact">
         <h1 class="heading">Contact</h1>
-        <a target="_blank" href="https://twitter.com/DanielRBailey"><i class="fab fa-twitter"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/daniel-bailey-289979162/"><i class="fab fa-linkedin"></i></a>
-        <a target="_blank" href="https://github.com/LorenzoBee"><i class="fab fa-github"></i></a> <br>
-        <a href="mailto:info@danrbailey.co.uk" class="email">Email: info@danrbailey.co.uk</a> <br>
+        <a target="_blank" href="https://twitter.com/DanielRBailey" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/daniel-bailey-289979162/" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/LorenzoBee" rel="noreferrer"><i class="fab fa-github"></i></a> <br>
+        <a href="mailto:daniel.r.bailey@hotmail.co.uk" class="email">Email: daniel.r.bailey@hotmail.co.uk</a> <br>
         <div class="cards">
             <div class="card">
                 Contact me directly using the form below
                 <form name="contact-form" method="POST" data-netlify="true">
                     <p>
-                        <label><input type="text" name="name" placeholder=" "><span>Name</span></label>
+                        <label><input type="text"name="firstname" placeholder="First Name *" required></label>
+                        <label><input type="text"name="lastname" placeholder="Last Name"></label>
                     </p>
                     <p>
-                        <label><input type="text" name="email" placeholder=" "><span>Email</span></label>
+                        <label><input type="text" name="email" placeholder="Email *" required></label>
                     </p>
                     <p>
-                        <label class="message-label"><textarea name="message" rows="5" placeholder=" "></textarea><span>Message</span></label>
+                        <label><input type="text" name="subject" placeholder="Subject"></label>
+                    </p>
+                    <p>
+                        <label class="message-label"><textarea name="message" rows="5" placeholder="Message *" required></textarea></label>
                     </p>
                     <p>
                         <button type="submit">Send</button>
@@ -154,3 +167,7 @@
         </div>
     </section>
 </body>
+
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
