@@ -317,6 +317,13 @@ h1{
 }
 
 @media screen and (max-width: 1100px) {
+    .header{
+        text-align: center;
+        width: auto;
+        font-size: 1.5em;
+        padding: 1em 0;
+    }
+    
     #home, #skills, #projects, #freelance, #contact{
         h1{
             width: 50%;
@@ -329,10 +336,23 @@ h1{
             }
         }
     }
-    
+
     #home{
+        margin-top: -9em;
         h1{
             width: 80%;
+        }
+    }
+
+    #contact{
+        a{
+            font-size: 3em;
+        }
+
+        form{
+            input, textarea{
+                font-size: 2em;
+            }
         }
     }
 }
