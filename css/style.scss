@@ -28,21 +28,21 @@ html, body{
     .navbar{    
         ul{
             display: inline-block;
-            
-            a{
-                color: $white;
-                text-decoration: none;
-                transition: $transition;
-                
-                li{
+
+            li{
                 display: inline;
                 margin: .5em;
                 font-size: 1.3em;
-                
-                }
+                list-style: none;
 
-                &:hover{
-                    text-shadow: rgba(0, 0, 0, 0.7) 5px 5px 10px;
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    transition: $transition;
+
+                    &:hover{
+                        text-shadow: rgba(0, 0, 0, 0.7) 5px 5px 10px;
+                    }
                 }
             }
         }

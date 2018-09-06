@@ -18,20 +18,21 @@ html, body {
   display: inline-block;
 }
 
-.header .navbar ul a {
+.header .navbar ul li {
+  display: inline;
+  margin: .5em;
+  font-size: 1.3em;
+  list-style: none;
+}
+
+.header .navbar ul li a {
   color: #E5E5E5;
   text-decoration: none;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-.header .navbar ul a li {
-  display: inline;
-  margin: .5em;
-  font-size: 1.3em;
-}
-
-.header .navbar ul a:hover {
+.header .navbar ul li a:hover {
   text-shadow: rgba(0, 0, 0, 0.7) 5px 5px 10px;
 }
 
