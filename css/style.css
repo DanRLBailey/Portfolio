@@ -365,6 +365,7 @@ h1 {
 .success {
   background: #7FAFAF;
   padding: 5em;
+  font-family: 'Quicksand';
 }
 
 .success h2 {
