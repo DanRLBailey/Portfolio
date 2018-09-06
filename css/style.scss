@@ -318,12 +318,9 @@ h1{
                 }
             }
         }
-        p:first-child{
-            label{
-                input{
-                    width: 40%;
-                }
-            }
+        
+        .name{
+            width: 40%;
         }
 
         button{

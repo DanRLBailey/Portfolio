@@ -336,7 +336,7 @@ h1 {
   outline: none;
 }
 
-#contact form p:first-child label input {
+#contact form .name {
   width: 40%;
 }
 
