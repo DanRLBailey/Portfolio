@@ -110,7 +110,7 @@ h1 {
 
 #home {
   margin-top: -6em;
-  padding-top: 8em;
+  padding: 14em 0 13em 0;
   background: -webkit-gradient(linear, left top, right bottom, from(#8fc4c4), color-stop(#87baba), color-stop(#7fafaf), color-stop(#78a5a5), to(#709b9b));
   background: linear-gradient(to right bottom, #8fc4c4, #87baba, #7fafaf, #78a5a5, #709b9b);
 }
@@ -133,6 +133,18 @@ h1 {
 
 #home h2 {
   font-size: 2.2em;
+  margin-bottom: .5em;
+}
+
+#home h2 a {
+  color: #E5E5E5;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#home h2 a:hover {
+  text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 5px;
 }
 
 #skills {
@@ -275,4 +287,21 @@ h1 {
   cursor: pointer;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
           box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+  background: #4d6069;
+  border: 2px solid #4d6069;
+}
+
+@media screen and (max-width: 1100px) {
+  #home h1, #skills h1, #projects h1, #freelance h1, #contact h1 {
+    width: 50%;
+  }
+  #home .cards, #skills .cards, #projects .cards, #freelance .cards, #contact .cards {
+    display: block;
+  }
+  #home .cards .card, #skills .cards .card, #projects .cards .card, #freelance .cards .card, #contact .cards .card {
+    width: 80%;
+  }
+  #home h1 {
+    width: 80%;
+  }
 }
