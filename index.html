@@ -128,8 +128,28 @@
 
     <section id="contact">
         <h1 class="heading">Contact</h1>
-        <a href="mailto:info@danrbailey.co.uk"><i class="fas fa-envelope"></i>info@danrbailey.co.uk</a> <br>
         <a target="_blank" href="https://twitter.com/DanielRBailey"><i class="fab fa-twitter"></i></a>
         <a target="_blank" href="https://www.linkedin.com/in/daniel-bailey-289979162/"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/LorenzoBee"><i class="fab fa-github"></i></a> <br>
+        <a href="mailto:info@danrbailey.co.uk" class="email">Email: info@danrbailey.co.uk</a> <br>
+        <div class="cards">
+            <div class="card">
+                Contact me directly using the form below
+                <form name="contact-form" method="POST" data-netlify="true">
+                    <p>
+                        <label><input type="text" name="name" placeholder=" "><span>Name</span></label>
+                    </p>
+                    <p>
+                        <label><input type="text" name="email" placeholder=" "><span>Email</span></label>
+                    </p>
+                    <p>
+                        <label class="message-label"><textarea name="message" rows="5" placeholder=" "></textarea><span>Message</span></label>
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
+        </div>
     </section>
 </body>

@@ -6,6 +6,7 @@ $black: #282828;
 $teal-solid: #7FAFAF;
 $cream-solid: #BBB999;
 $dark-blue-solid: #627B87;
+$grey: lighten($color: $black, $amount: 30);
 
 $transition: 0.3s ease;
 $heading-font: 'Heebo';
@@ -41,7 +42,6 @@ html, body{
                 }
 
                 &:hover{
-                    //color: $black;
                     text-shadow: rgba(0, 0, 0, 0.7) 5px 5px 10px;
                 }
             }
@@ -54,7 +54,7 @@ section{
     padding: 7em 0;
 
     .heading{
-        font-size: 2.5em;
+        font-size: 4em;
         font-weight: normal;
         margin-top: 0;
     }
@@ -68,9 +68,9 @@ section{
 }
 
 h1{
-    width: 15%;
-    border-top: 10px double rgba(0, 0, 0, 0.25);
-    border-bottom: 10px double rgba(0, 0, 0, 0.25);
+    width: 20%;
+    border-top: 15px double rgba(0, 0, 0, 0.25);
+    border-bottom: 15px double rgba(0, 0, 0, 0.25);
     margin: 1em auto;
     text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px;
 }
@@ -82,7 +82,7 @@ h1{
 
     .card{
         background: $white;
-        color: lighten($color: $black, $amount: 30);
+        color: $grey;
         margin: 1em;
         width: 25%;
         padding: 1em;
@@ -192,12 +192,113 @@ h1{
     a, i{
         color: $white;
         text-decoration: none;
-        font-size: 1.5em;
         margin: 0 .5em .5em 0;
         transition: $transition;
     }
 
+    a{
+        font-size: 1.5em;
+        
+    }
+
     i{
         font-size: 2em;
+        &:hover{
+            text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 7px;
+        }
+    }
+
+    .email:hover{
+        text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 5px;
+    }
+
+    form{
+        label{
+            font-size: 1.5em;
+            position: relative;
+
+            input, textarea{
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $grey;
+                color: $grey;
+                width: 80%;
+                font-size: 1em;
+                margin: 1em 0;
+                resize: none;
+                transition: $transition;
+                font-family: 'Quicksand';
+    
+                &:focus{
+                    outline: none;
+    
+                    // &::placeholder{
+                    //     transition: $transition;
+                    //     color: transparent;
+                    // }
+                }
+
+                &:not(:placeholder-shown) + span,
+                &:focus + span{
+                    left: 0;
+                    top: -1em;
+                    opacity: 1;
+                }
+                
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            textarea{
+                
+                
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            span{
+                pointer-events: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0.5;
+                transition: $transition;
+            }
+        }
+
+        .message-label{
+            textarea{
+                &:not(:placeholder-shown) + span,
+                &:focus + span{
+                    left: 0;
+                    top: -7.5em;
+                    opacity: 1;
+                }
+            }
+            
+            span{
+                top: -6.5em;
+            }
+        }
+
+        button{
+            font-size: 1.4em;
+            font-family: 'Quicksand';
+            color: $white;
+            border: 2px solid $dark-blue-solid;
+            //border-bottom: 2px solid $grey;
+            border-radius: .1em;
+            background: none;
+            padding: .5em;
+            transition: $transition;
+            background: $dark-blue-solid;
+
+            &:hover{
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+            }
+        }
     }
 }

@@ -41,7 +41,7 @@ section {
 }
 
 section .heading {
-  font-size: 2.5em;
+  font-size: 4em;
   font-weight: normal;
   margin-top: 0;
 }
@@ -52,9 +52,9 @@ section h2 {
 }
 
 h1 {
-  width: 15%;
-  border-top: 10px double rgba(0, 0, 0, 0.25);
-  border-bottom: 10px double rgba(0, 0, 0, 0.25);
+  width: 20%;
+  border-top: 15px double rgba(0, 0, 0, 0.25);
+  border-bottom: 15px double rgba(0, 0, 0, 0.25);
   margin: 1em auto;
   text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px;
 }
@@ -177,12 +177,102 @@ h1 {
 #contact a, #contact i {
   color: #E5E5E5;
   text-decoration: none;
-  font-size: 1.5em;
   margin: 0 .5em .5em 0;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
+#contact a {
+  font-size: 1.5em;
+}
+
 #contact i {
   font-size: 2em;
+}
+
+#contact i:hover {
+  text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 7px;
+}
+
+#contact .email:hover {
+  text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 5px;
+}
+
+#contact form label {
+  font-size: 1.5em;
+  position: relative;
+}
+
+#contact form label input, #contact form label textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #757575;
+  color: #757575;
+  width: 80%;
+  font-size: 1em;
+  margin: 1em 0;
+  resize: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-family: 'Quicksand';
+}
+
+#contact form label input:focus, #contact form label textarea:focus {
+  outline: none;
+}
+
+#contact form label input:not(:placeholder-shown) + span,
+#contact form label input:focus + span, #contact form label textarea:not(:placeholder-shown) + span,
+#contact form label textarea:focus + span {
+  left: 0;
+  top: -1em;
+  opacity: 1;
+}
+
+#contact form label input:focus, #contact form label textarea:focus {
+  outline: none;
+}
+
+#contact form label textarea:focus {
+  outline: none;
+}
+
+#contact form label span {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#contact form .message-label textarea:not(:placeholder-shown) + span,
+#contact form .message-label textarea:focus + span {
+  left: 0;
+  top: -7.5em;
+  opacity: 1;
+}
+
+#contact form .message-label span {
+  top: -6.5em;
+}
+
+#contact form button {
+  font-size: 1.4em;
+  font-family: 'Quicksand';
+  color: #E5E5E5;
+  border: 2px solid #627B87;
+  border-radius: .1em;
+  background: none;
+  padding: .5em;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #627B87;
+}
+
+#contact form button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+          box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
 }
