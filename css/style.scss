@@ -188,6 +188,7 @@ h1{
     background: $dark-blue;
 
     .card{
+
         h3{
             color: $dark-blue-solid;
             border-color: $dark-blue-solid;
@@ -218,6 +219,10 @@ h1{
         }
 
         padding-bottom: 3em;
+    }
+
+    .hidden{
+        display: none;
     }
 }
 
@@ -363,6 +368,10 @@ h1{
         color: $white;
         }
     }
+}
+
+.hidden{
+    display: none;
 }
 
 @media screen and (max-width: 1100px) {
