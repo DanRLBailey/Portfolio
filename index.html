@@ -19,7 +19,6 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Heebo:700|Quicksand" rel="stylesheet">
-    <script src="smoothscroll.js"></script>
 </head>
 
 <body>
@@ -85,33 +84,66 @@
 
     <section id="projects">
         <h1 class="heading">Projects</h1>
+        <h2>Unreal Engine 4</h2>
         <div class="cards">
-            <!-- <div class="card hidden">
-                <h3>Meow Games</h3>
-                <p>A website made in HTML and SCSS, with a little JS for a games company I co-founded. We are also currently making our first game in Unreal Engine 4. You can view the WIP site below.</p>
-                <a target="_blank" href="https://danrlbailey.github.io/Meow/" rel="noreferrer"><button>View</button></a>
-            </div> -->
+            <div class="card">
+                <h3>TGP Solo Project</h3>
+                <p>A game I made in the first 6 weeks of the second year of university. It is a top-down bullet hell game where the aim is simply to live as long as you can. It is made using UE4 and mostly C++ with some Blueprints.</p>
+                <a id="buttonTGPSolo"><button>View</button></a>
+
+                <div id="modalTGPSolo" class="modal">
+                    <div class="modal-content">
+                        <span class="closeTGPSolo">&times;</span>
+                        <p>MODAL TGPS!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Tower Defence</h3>
+                <p>A tower defence game made using UE4 and Blueprints. It's main mechanic is that you take control of a pawn on the board and choose the start and end point. Enemies may also spawn others that chase the player around the board.</p>
+                <a id="buttonGD"><button>View</button></a>
+
+                <div id="modalGD" class="modal">
+                    <div class="modal-content">
+                        <span class="closeGD">&times;</span>
+                        <p>MODAL GD!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>TGP Pair Project</h3>
+                <p>A first-person action-adventure game made to mimic the style of the game Metroid Prime. It is made using UE4 and C++ with a little bit of Blueprints.</p>
+                <a id="buttonTGPPair"><button>View</button></a>
+
+                <div id="modalTGPPair" class="modal">
+                    <div class="modal-content">
+                        <span class="closeTGPPair">&times;</span>
+                        <p>MODAL TGPPair!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Websites & Other Games</h2>
+        <div class="cards">
             <div class="card">
                 <h3>D'Litas</h3>
                 <p>A cake company I have developed a website for, made from scratch and then converted to be compatible with WordPress.</p>
                 <a target="_blank" href="http://dlitas.co.uk" rel="noreferrer"><button>View</button></a>
             </div>
-            <div class="card hidden">
-                <h3>Uni Solo Project</h3>
-                <p>A game I made in the first 6 weeks of the second year of university. It is a top-down bullet hell game where the aim is simply to live as long as you can. It is made using UE4 and mostly C++ with some Blueprints.</p>
-                <a target="_blank" href=""><button>View</button></a>
+            <div class="card">
+                <h3>FOGGS</h3>
+                <p>A game made in the first year of university using C++ and a Staffordshire University framework called S2D. It is a game where the goal is to survive for as long as possible.</p>
+                <a id="buttonFOGGS"><button>View</button></a>
+
+                <div id="modalFOGGS" class="modal">
+                    <div class="modal-content">
+                        <span class="closeFOGGS">&times;</span>
+                        <p>MODAL FOGGS!</p>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!--<h2>Completed</h2>
-        <div class="cards">
-            <div class="card">
-                    <h3>One from Uni</h3>
-            </div>
-            <div class="card">
-                    <h3>Two from Uni</h3>
-            </div>
-        </div> -->
     </section>
 
     <section id="freelance" class="hidden">
@@ -176,6 +208,9 @@
             </div>
         </div>
     </section>
+
+    <script src="javascript/main.js"></script>
+    <script src="javascript/smoothscroll.js"></script>
 </body>
 
 <script>

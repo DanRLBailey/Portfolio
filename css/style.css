@@ -221,6 +221,40 @@ h1 {
   border: 2px solid #4d6069;
 }
 
+#projects .card .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#projects .card .modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#projects .card .modal .modal-content .closeTGPSolo, #projects .card .modal .modal-content .closeGD, #projects .card .modal .modal-content .closeTGPPair, #projects .card .modal .modal-content .closeFOGGS {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#projects .card .modal .modal-content .closeTGPSolo:hover, #projects .card .modal .modal-content .closeTGPSolo:focus, #projects .card .modal .modal-content .closeGD:hover, #projects .card .modal .modal-content .closeGD:focus, #projects .card .modal .modal-content .closeTGPPair:hover, #projects .card .modal .modal-content .closeTGPPair:focus, #projects .card .modal .modal-content .closeFOGGS:hover, #projects .card .modal .modal-content .closeFOGGS:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 #projects .hidden {
   display: none;
 }
