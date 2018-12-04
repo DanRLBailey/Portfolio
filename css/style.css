@@ -156,14 +156,18 @@ h1 {
   margin-bottom: .5em;
 }
 
-#home h2 a {
+#home .links {
+  font-size: 3.5em;
+}
+
+#home a {
   color: #E5E5E5;
   text-decoration: none;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-#home h2 a:hover {
+#home a:hover {
   text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 5px;
 }
 
@@ -259,8 +263,8 @@ h1 {
 }
 
 #contact {
-  background: -webkit-gradient(linear, left top, right bottom, from(#cdcba8), color-stop(#c4c2a1), color-stop(#bbb999), color-stop(#b3b192), to(#aaa88b));
-  background: linear-gradient(to right bottom, #cdcba8, #c4c2a1, #bbb999, #b3b192, #aaa88b);
+  background: -webkit-gradient(linear, left top, right bottom, from(#8fc4c4), color-stop(#87baba), color-stop(#7fafaf), color-stop(#78a5a5), to(#709b9b));
+  background: linear-gradient(to right bottom, #8fc4c4, #87baba, #7fafaf, #78a5a5, #709b9b);
 }
 
 #contact .card {

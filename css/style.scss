@@ -160,15 +160,19 @@ h1{
     h2{
         font-size: 2.2em;
         margin-bottom: .5em;
+    }
 
-        a{
-            color: $white;
-            text-decoration: none;
-            transition: $transition;
+    .links{
+        font-size: 3.5em;
+    }
+    
+    a{
+        color: $white;
+        text-decoration: none;
+        transition: $transition;
 
-            &:hover{
-                text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 5px;
-            }
+        &:hover{
+            text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 5px;
         }
     }
 }
@@ -261,7 +265,7 @@ h1{
 }
 
 #contact{
-    background: $cream;
+    background: $teal;
 
     .card{
         width: 40%;
