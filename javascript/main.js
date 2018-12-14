@@ -13,7 +13,8 @@ var buttonFOGGS = document.getElementById('buttonFOGGS');
 var spanTGPSolo = document.getElementsByClassName("closeTGPSolo")[0];
 var spanGD = document.getElementsByClassName("closeGD")[0];
 var spanTGPPair = document.getElementsByClassName("closeTGPPair")[0];
-var spanFOGGS = document.getElementsByClassName("closeFOGGS")[0];
+//var spanFOGGS = document.getElementsByClassName("closeFOGGS")[0];
+var spanFOGGS = document.querySelector(".closeFOGGS");
 
 buttonTGPSolo.onclick = function() {
     modalTGPSolo.style.display = "block";

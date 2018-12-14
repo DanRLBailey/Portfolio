@@ -236,10 +236,18 @@ h1{
 
             .modal-content{
                 background-color: #fefefe;
-                margin: 15% auto;
+                margin: 3% auto;
                 padding: 20px;
-                border: 1px solid #888;
+                border: 1px solid #fefefe;
                 width: 80%;
+                border-radius: .5em;
+
+                div {
+                    video {
+                        border-radius: .5em;
+                        width: 80%;
+                    }
+                }
 
                 .closeTGPSolo, .closeGD, .closeTGPPair, .closeFOGGS{
                     color: #aaa;
