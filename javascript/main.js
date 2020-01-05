@@ -4,15 +4,15 @@ var buttonTGPSolo = document.getElementById('buttonTGPSolo');
 var modalGD = document.getElementById('modalGD');
 var buttonGD = document.getElementById('buttonGD');
 
-var modalTGPPair = document.getElementById('modalTGPPair');
-var buttonTGPPair = document.getElementById('buttonTGPPair');
+var modalMGD = document.getElementById('modalMGD');
+var buttonMGD = document.getElementById('buttonMGD');
 
 var modalFOGGS = document.getElementById('modalFOGGS');
 var buttonFOGGS = document.getElementById('buttonFOGGS');
 
 var spanTGPSolo = document.getElementsByClassName("closeTGPSolo")[0];
 var spanGD = document.getElementsByClassName("closeGD")[0];
-var spanTGPPair = document.getElementsByClassName("closeTGPPair")[0];
+var spanMGD = document.getElementsByClassName("closeMGD")[0];
 //var spanFOGGS = document.getElementsByClassName("closeFOGGS")[0];
 var spanFOGGS = document.querySelector(".closeFOGGS");
 
@@ -24,8 +24,8 @@ buttonGD.onclick = function() {
     modalGD.style.display = "block";
 }
 
-buttonTGPPair.onclick = function() {
-    modalTGPPair.style.display = "block";
+buttonMGD.onclick = function() {
+    modalMGD.style.display = "block";
 }
 
 buttonFOGGS.onclick = function() {
@@ -41,8 +41,8 @@ spanGD.onclick = function() {
     modalGD.style.display = "none";
 }
 
-spanTGPPair.onclick = function() {
-    modalTGPPair.style.display = "none";
+spanMGD.onclick = function() {
+    modalMGD.style.display = "none";
 }
 
 spanFOGGS.onclick = function() {
@@ -50,8 +50,8 @@ spanFOGGS.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+//window.onclick = function(event) {
+    //if (event.target == modal) {
+        //modal.style.display = "none";
+    //}
+//}

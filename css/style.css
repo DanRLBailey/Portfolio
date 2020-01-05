@@ -265,14 +265,14 @@ h1 {
   width: 65%;
 }
 
-#projects .card .modal .modal-content .closeTGPSolo, #projects .card .modal .modal-content .closeGD, #projects .card .modal .modal-content .closeTGPPair, #projects .card .modal .modal-content .closeFOGGS {
+#projects .card .modal .modal-content .closeTGPSolo, #projects .card .modal .modal-content .closeGD, #projects .card .modal .modal-content .closeMGD, #projects .card .modal .modal-content .closeFOGGS {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-#projects .card .modal .modal-content .closeTGPSolo:hover, #projects .card .modal .modal-content .closeTGPSolo:focus, #projects .card .modal .modal-content .closeGD:hover, #projects .card .modal .modal-content .closeGD:focus, #projects .card .modal .modal-content .closeTGPPair:hover, #projects .card .modal .modal-content .closeTGPPair:focus, #projects .card .modal .modal-content .closeFOGGS:hover, #projects .card .modal .modal-content .closeFOGGS:focus {
+#projects .card .modal .modal-content .closeTGPSolo:hover, #projects .card .modal .modal-content .closeTGPSolo:focus, #projects .card .modal .modal-content .closeGD:hover, #projects .card .modal .modal-content .closeGD:focus, #projects .card .modal .modal-content .closeMGD:hover, #projects .card .modal .modal-content .closeMGD:focus, #projects .card .modal .modal-content .closeFOGGS:hover, #projects .card .modal .modal-content .closeFOGGS:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
