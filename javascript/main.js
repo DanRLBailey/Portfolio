@@ -1,3 +1,6 @@
+var modalFYP = document.getElementById('modalFYP');
+var buttonFYP = document.getElementById('buttonFYP');
+
 var modalTGPSolo = document.getElementById('modalTGPSolo');
 var buttonTGPSolo = document.getElementById('buttonTGPSolo');
 
@@ -10,11 +13,16 @@ var buttonMGD = document.getElementById('buttonMGD');
 var modalFOGGS = document.getElementById('modalFOGGS');
 var buttonFOGGS = document.getElementById('buttonFOGGS');
 
+var spanFYP = document.getElementsByClassName("closeFYP")[0];
 var spanTGPSolo = document.getElementsByClassName("closeTGPSolo")[0];
 var spanGD = document.getElementsByClassName("closeGD")[0];
 var spanMGD = document.getElementsByClassName("closeMGD")[0];
 //var spanFOGGS = document.getElementsByClassName("closeFOGGS")[0];
 var spanFOGGS = document.querySelector(".closeFOGGS");
+
+buttonFYP.onclick = function() {
+    modalFYP.style.display = "block";
+}
 
 buttonTGPSolo.onclick = function() {
     modalTGPSolo.style.display = "block";
@@ -33,6 +41,10 @@ buttonFOGGS.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
+spanFYP.onclick = function() {
+    modalFYP.style.display = "none";
+}
+
 spanTGPSolo.onclick = function() {
     modalTGPSolo.style.display = "none";
 }

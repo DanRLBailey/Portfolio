@@ -92,7 +92,7 @@ h1{
         h3{
             font-family: $heading-font;
             text-transform: uppercase;
-            font-size: 1.5em;
+            font-size: 1.4em;
             width: 90%;
             margin: 1em auto;
             border-bottom: 3px solid $black;
@@ -188,21 +188,21 @@ h1{
     }
 }
 
-#projects{
+#projects {
     background: $dark-blue;
 
-    .card{
+    .card {
 
-        h3{
+        h3 {
             color: $dark-blue-solid;
             border-color: $dark-blue-solid;
         }
 
-        p{
+        p {
             font-size: 1.2em;
         }
 
-        button{
+        button {
             margin-top: 1em;
             font-size: 1.2em;
             font-family: 'Quicksand';
@@ -222,7 +222,7 @@ h1{
             }
         }
 
-        .modal{
+        .modal {
             display: none;
             position: fixed;
             z-index: 1;
@@ -234,7 +234,7 @@ h1{
             background-color: rgb(0, 0, 0);
             background-color: rgba(0, 0, 0, 0.4);
 
-            .modal-content{
+            .modal-content {
                 background-color: #fefefe;
                 margin: 3% auto;
                 padding: 20px;
@@ -262,7 +262,11 @@ h1{
                     }
                 }
 
-                .closeTGPSolo, .closeGD, .closeMGD, .closeFOGGS{
+                .closeFYP, 
+                .closeTGPSolo, 
+                .closeGD, 
+                .closeMGD, 
+                .closeFOGGS {
                     color: #aaa;
                     float: right;
                     font-size: 28px;
